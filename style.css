@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Vazir;
+    src: url("fonts/Vazirmatn-RD-FD-Regular.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: Vazir;
+    src: url("fonts/Vazirmatn-RD-FD-Bold.woff2") format("woff2");
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+}
+
+body{
+    font-family: Vazir;
+    background-color: #e8e8e8;
+    color: #222;
+    opacity: 0.8;
+}
