@@ -19,3 +19,10 @@ body{
     color: #222;
     opacity: 0.8;
 }
+
+/* سربرگ */
+
+nav.navbars{
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
