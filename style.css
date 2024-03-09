@@ -26,3 +26,46 @@ nav.navbars{
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+
+/* اطلاعات پشتیبانی */
+
+.support_info.icon_front{
+    position: relative;
+}
+
+.support_info.icon_front::before{
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 50% 100% 100% 50% / 69% 75% 75% 69%;
+    background-color: #fff5f5;
+    position: absolute;
+    left: calc(45% - 34px);
+    top: -20px;
+}
+
+.icon_front.el_1::before{
+    background-color: rgb(156, 39, 175, 0.20);
+    transform: rotate(34deg);
+}
+
+.icon_front.el_2::before{
+    background-color: rgba(191, 166, 196, 0.2);
+    transform: rotate(54deg);
+}
+
+.icon_front.el_3::before{
+    background-color: rgba(158, 175, 39, 0.2);
+    transform: rotate(77deg);
+}
+
+.icon_front.el_4::before{
+    background-color: rgba(175, 39, 39, 0.2);
+    transform: rotate(14deg);
+}
+
+.icon_front.el_5::before{
+    background-color: rgba(39, 175, 86, 0.2);
+    transform: rotate(132deg);
+}
