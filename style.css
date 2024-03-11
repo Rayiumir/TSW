@@ -114,3 +114,11 @@ nav.navbars {
     pointer-events: none;
     background: #ccc;
 }
+
+/* پابرگ */
+
+.footer{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
