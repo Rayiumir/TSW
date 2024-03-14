@@ -90,7 +90,7 @@ nav.navbars {
     float: left;
 }
 
-.MultiCarousel .MultiCarousel-inner .item> article {
+.MultiCarousel .MultiCarousel-inner .item> article, .MultiCarousel .MultiCarousel-inner .item> figure {
     margin: 5px;
 }
 
@@ -121,4 +121,10 @@ nav.navbars {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom: 1px solid #e8e8e8;
+}
+
+/* صفحه خرید محصول */
+
+figure.img img{
+    cursor: pointer;
 }

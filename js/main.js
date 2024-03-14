@@ -106,3 +106,10 @@ $(document).ready(function () {
     }
 
 });
+
+// Product Gallery
+
+function ImgBox(SmallImg){
+    var fullImg = document.getElementById("ImagesBox");
+    fullImg.src = SmallImg.src;
+}
