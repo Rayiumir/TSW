@@ -1,6 +1,6 @@
 // Slidser Products
 
-$(document).ready(function () {
+jQuery(document).ready(function ($) {
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";
