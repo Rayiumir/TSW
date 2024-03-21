@@ -3,7 +3,7 @@
     <div class="container">
         <a class="navbar-brand" href="#">
             <figure>
-                <img src="img/LogoRayium.png" class="img-fluid" alt="" srcset="">
+                <img src="<?php echo RAYIUM_URL; ?>/img/LogoRayium.png" class="img-fluid" alt="" srcset="">
             </figure>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -12,28 +12,17 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarOne">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">خانه</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">پیوند</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        دیگر ...
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <?php
+                wp_nav_menu(array(
+                    'theme_location' => 'main-one',
+                    'container' => false,
+                    'menu_class' => '',
+                    'fallback_cb' => '__return_false',
+                    'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                    'depth' => 2,
+                    'walker' => new bootstrap_5_wp_nav_menu_walker()
+                ));
+            ?>
             <div class="d-flex">
                 <button class="btn btn-secondary rounded-5 me-3" type="submit"><i class="fa-duotone fa-moon"></i></button>
                 <button class="btn btn-success rounded-5" type="submit"><i class="fa-duotone fa-user-plus"></i> ورود / عضویت </button>
@@ -53,28 +42,17 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTwo">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">خانه</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">پیوند</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            دیگر ... 
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'main-two',
+                        'container' => false,
+                        'menu_class' => '',
+                        'fallback_cb' => '__return_false',
+                        'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-md-0 %2$s">%3$s</ul>',
+                        'depth' => 2,
+                        'walker' => new bootstrap_5_wp_nav_menu_walker()
+                    ));
+                ?>
                 <form class="d-flex" role="search">
                     <input class="form-control rounded-5 me-2" type="search" placeholder="جستجو در فروشگاه ..." aria-label="Search">
                 </form>
