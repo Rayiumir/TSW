@@ -11,3 +11,8 @@ require_once('navbar.php');
 
 register_nav_menu('main-one', 'منوی اول');
 register_nav_menu('main-two', 'منوی دوم');
+
+function woocommerce_supports(){
+    add_theme_support('woocommerce');
+}
+add_action('after_setup_theme', 'woocommerce_supports');
